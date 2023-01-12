@@ -78,7 +78,7 @@
 
 ## About The Project
 
-The project is a backend that manages the endpoints necessary for the proper functioning of requesting a professional in the Vilet client, it has a `clean architecture` using `Nest as a framework`.
+El proyecto es un frontend movil que gestiona toda la interaccion del usuario, está desarrollado con `Ionic`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,6 +92,43 @@ The project is a backend that manages the endpoints necessary for the proper fun
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Project tree
+
+For the structure of the project, a clean architecture was implemented
+
+```
+|-- src /
+  |-- base /
+  |    |-- utils /
+  |    |    |-- mapper.ts
+  |    |    |-- use-case.ts
+  |-- features /
+  |    |-- your-feature /
+  |    |    |-- domain /
+  |    |    |    |-- models /
+  |    |    |    |    |-- user.model.ts
+  |    |    |    |-- repositories /
+  |    |    |    |    |-- user.repository.ts
+  |    |    |    |-- usecases /
+  |    |    |    |    |-- user-login.usecase.ts
+  |    |    |    |    |-- user-register.usecase.ts
+  |    |    |    |    |-- get-user.usecase.ts
+  |    |    |-- data /
+  |    |    |    |-- entities /
+  |    |    |    |    |-- user-entity.ts
+  |    |    |    |-- mappers /
+  |    |    |    |    |-- user-repository.mapper.ts
+  |    |    |    |--user-implementation.repository.ts
+  |    |    |-- presentation /
+  |    |    |    |-- components /
+  |    |    |    |-- pages /
+  |    |    |    |-- directives /
+  |    |    |
+  |-- shared /
+
+
+```
+
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -100,11 +137,11 @@ To start you must have `MySQL` installed with a database called `vilet-frontend`
 
 ### Prerequisites
 
-It is recommended to install the nest js CLI
+To start it is recommended to have the ionic CLI installed
 
 - npm
   ```sh
-  npm i -g @nestjs/cli
+  npm i -g @ionic/cli
   ```
 
 ### Installation
@@ -114,29 +151,21 @@ It is recommended to install the nest js CLI
    git clone https://github.com/diegorambao/vilet-frontend.git
    ```
 2. Install NPM packages
+
    ```sh
    npm install
    ```
-3. set your environment variables in `development.env`
 
-   ```js
-   DATABASE_HOST=YOUR HOST DATABASE
-   DATABASE_PORT=3306
-   DATABASE_USER=YOUR USER DATABASE
-   DATABASE_PASSWORD=YOUR PASSWORD DATABASE
-   DATABASE_NAME=YOUR NAME DATABASE
-   DATABASE_SYNCHRONIZE=true
-   JWT_SECRET=74YLbq4%c!wU
-   JWT_EXPIRATION_TIME=1800
-   JWT_REFRESH_TOKEN_SECRET=7jML9q4-c!s0
-   JWT_REFRESH_TOKEN_EXPIRATION_TIME=86400
-   PORT=3000
-   ```
-
-4. to start a development server
+3. to start a development server
 
 ```sh
- npm run start:dev
+ npm start
+```
+
+4. to run the tests
+
+```sh
+ npm test
 ```
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
@@ -224,3 +253,7 @@ Project Link: [https://github.com/diegorambao/vilet-frontend](https://github.com
 [typescript-url]: https://www.typescriptlang.org/
 [capacitor]: https://img.shields.io/badge/capacitor-blue?style=for-the-badge&logo=capacitor&logoColor=white
 [capacitor-url]: https://www.capacitorlang.org/
+
+```
+
+```

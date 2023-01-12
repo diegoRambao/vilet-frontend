@@ -78,7 +78,7 @@
 
 ## About The Project
 
-El proyecto es un frontend movil que gestiona toda la interaccion del usuario, está desarrollado con `Ionic`
+The project is a mobile frontend that manages all user interaction, it is developed with `Ionic`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +133,7 @@ For the structure of the project, a clean architecture was implemented
 
 ## Getting Started
 
-To start you must have `MySQL` installed with a database called `vilet-frontend`
+To start you must have `npm` installed.
 
 ### Prerequisites
 

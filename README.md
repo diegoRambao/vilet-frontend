@@ -33,16 +33,16 @@
 <h1 align="center">Frontend Ionic Vilet</h3>
 
   <p align="center">
-    frontend for viltet app
+    frontend for vilet app
     <br />
-    <a href="https://github.com/diegorambao/viltet-frontend"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/diegorambao/vilet-frontend"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/diegorambao/viltet-frontend">Demo</a>
+    <a href="https://github.com/diegorambao/vilet-frontend">Demo</a>
     ·
-    <a href="https://github.com/diegorambao/viltet-frontend/issues">Report Bug</a>
+    <a href="https://github.com/diegorambao/vilet-frontend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/diegorambao/viltet-frontend/issues">Request Feature</a>
+    <a href="https://github.com/diegorambao/vilet-frontend/issues">Request Feature</a>
   </p>
 </div>
 
@@ -96,7 +96,7 @@ The project is a backend that manages the endpoints necessary for the proper fun
 
 ## Getting Started
 
-To start you must have `MySQL` installed with a database called `viltet-frontend`
+To start you must have `MySQL` installed with a database called `vilet-frontend`
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ It is recommended to install the nest js CLI
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/diegorambao/viltet-frontend.git
+   git clone https://github.com/diegorambao/vilet-frontend.git
    ```
 2. Install NPM packages
    ```sh
@@ -152,7 +152,7 @@ It is recommended to install the nest js CLI
 - [ ] Feature 3
   - [ ] Nested Feature
 
-See the [open issues](https://github.com/diegorambao/viltet-frontend/issues) for a full list of proposed features (and known issues). -->
+See the [open issues](https://github.com/diegorambao/vilet-frontend/issues) for a full list of proposed features (and known issues). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 diegorambao - [@twitter_handle](https://twitter.com/diegorambao)
 
-Project Link: [https://github.com/diegorambao/viltet-frontend](https://github.com/diegorambao/viltet-frontend)
+Project Link: [https://github.com/diegorambao/vilet-frontend](https://github.com/diegorambao/vilet-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,16 +202,16 @@ Project Link: [https://github.com/diegorambao/viltet-frontend](https://github.co
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/diegorambao/viltet-frontend.svg?style=for-the-badge
-[contributors-url]: https://github.com/diegorambao/viltet-frontend/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/diegorambao/viltet-frontend.svg?style=for-the-badge
-[forks-url]: https://github.com/diegorambao/viltet-frontend/network/members
-[stars-shield]: https://img.shields.io/github/stars/diegorambao/viltet-frontend.svg?style=for-the-badge
-[stars-url]: https://github.com/diegorambao/viltet-frontend/stargazers
-[issues-shield]: https://img.shields.io/github/issues/diegorambao/viltet-frontend.svg?style=for-the-badge
-[issues-url]: https://github.com/diegorambao/viltet-frontend/issues
-[license-shield]: https://img.shields.io/github/license/diegorambao/viltet-frontend.svg?style=for-the-badge
-[license-url]: https://github.com/diegorambao/viltet-frontend/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/diegorambao/vilet-frontend.svg?style=for-the-badge
+[contributors-url]: https://github.com/diegorambao/vilet-frontend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/diegorambao/vilet-frontend.svg?style=for-the-badge
+[forks-url]: https://github.com/diegorambao/vilet-frontend/network/members
+[stars-shield]: https://img.shields.io/github/stars/diegorambao/vilet-frontend.svg?style=for-the-badge
+[stars-url]: https://github.com/diegorambao/vilet-frontend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/diegorambao/vilet-frontend.svg?style=for-the-badge
+[issues-url]: https://github.com/diegorambao/vilet-frontend/issues
+[license-shield]: https://img.shields.io/github/license/diegorambao/vilet-frontend.svg?style=for-the-badge
+[license-url]: https://github.com/diegorambao/vilet-frontend/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [node]: https://img.shields.io/badge/Nodejs-green?style=for-the-badge&logo=nodedotjs&logoColor=white

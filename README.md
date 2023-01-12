@@ -30,21 +30,23 @@
 <br />
 <div align="center">
 
-<h1 align="center">Backend Vilet</h3>
+<h1 align="center">Frontend Ionic Vilet</h3>
 
   <p align="center">
-    backend for vilet-backend app
+    frontend for viltet app
     <br />
-    <a href="https://github.com/diegorambao/vilet-backend"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/diegorambao/viltet-frontend"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/diegorambao/vilet-backend">Demo</a>
+    <a href="https://github.com/diegorambao/viltet-frontend">Demo</a>
     ·
-    <a href="https://github.com/diegorambao/vilet-backend/issues">Report Bug</a>
+    <a href="https://github.com/diegorambao/viltet-frontend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/diegorambao/vilet-backend/issues">Request Feature</a>
+    <a href="https://github.com/diegorambao/viltet-frontend/issues">Request Feature</a>
   </p>
 </div>
+
+![Image mockup Vilet](mockup.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -84,8 +86,9 @@ The project is a backend that manages the endpoints necessary for the proper fun
 
 - [![Node][node]][node-url]
 - [![TypeScript][typescript]][typescript-url]
-- [![Nest][nest.js]][nest-url]
-- [![Mysql][mysql]][mysql-url]
+- [![Angular][angular.js]][angular-url]
+- [![Ionic][ionic]][ionic-url]
+- [![Capacitor][capacitor]][capacitor-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +96,7 @@ The project is a backend that manages the endpoints necessary for the proper fun
 
 ## Getting Started
 
-To start you must have `MySQL` installed with a database called `vilet-backend`
+To start you must have `MySQL` installed with a database called `viltet-frontend`
 
 ### Prerequisites
 
@@ -108,7 +111,7 @@ It is recommended to install the nest js CLI
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/diegorambao/vilet-backend.git
+   git clone https://github.com/diegorambao/viltet-frontend.git
    ```
 2. Install NPM packages
    ```sh
@@ -149,7 +152,7 @@ It is recommended to install the nest js CLI
 - [ ] Feature 3
   - [ ] Nested Feature
 
-See the [open issues](https://github.com/diegorambao/vilet-backend/issues) for a full list of proposed features (and known issues). -->
+See the [open issues](https://github.com/diegorambao/viltet-frontend/issues) for a full list of proposed features (and known issues). -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,7 +185,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 diegorambao - [@twitter_handle](https://twitter.com/diegorambao)
 
-Project Link: [https://github.com/diegorambao/vilet-backend](https://github.com/diegorambao/vilet-backend)
+Project Link: [https://github.com/diegorambao/viltet-frontend](https://github.com/diegorambao/viltet-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,23 +202,25 @@ Project Link: [https://github.com/diegorambao/vilet-backend](https://github.com/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/diegorambao/vilet-backend.svg?style=for-the-badge
-[contributors-url]: https://github.com/diegorambao/vilet-backend/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/diegorambao/vilet-backend.svg?style=for-the-badge
-[forks-url]: https://github.com/diegorambao/vilet-backend/network/members
-[stars-shield]: https://img.shields.io/github/stars/diegorambao/vilet-backend.svg?style=for-the-badge
-[stars-url]: https://github.com/diegorambao/vilet-backend/stargazers
-[issues-shield]: https://img.shields.io/github/issues/diegorambao/vilet-backend.svg?style=for-the-badge
-[issues-url]: https://github.com/diegorambao/vilet-backend/issues
-[license-shield]: https://img.shields.io/github/license/diegorambao/vilet-backend.svg?style=for-the-badge
-[license-url]: https://github.com/diegorambao/vilet-backend/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/diegorambao/viltet-frontend.svg?style=for-the-badge
+[contributors-url]: https://github.com/diegorambao/viltet-frontend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/diegorambao/viltet-frontend.svg?style=for-the-badge
+[forks-url]: https://github.com/diegorambao/viltet-frontend/network/members
+[stars-shield]: https://img.shields.io/github/stars/diegorambao/viltet-frontend.svg?style=for-the-badge
+[stars-url]: https://github.com/diegorambao/viltet-frontend/stargazers
+[issues-shield]: https://img.shields.io/github/issues/diegorambao/viltet-frontend.svg?style=for-the-badge
+[issues-url]: https://github.com/diegorambao/viltet-frontend/issues
+[license-shield]: https://img.shields.io/github/license/diegorambao/viltet-frontend.svg?style=for-the-badge
+[license-url]: https://github.com/diegorambao/viltet-frontend/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [node]: https://img.shields.io/badge/Nodejs-green?style=for-the-badge&logo=nodedotjs&logoColor=white
 [node-url]: https://nestjs.com/
-[nest.js]: https://img.shields.io/badge/nest.js-red?style=for-the-badge&logo=nextdotjs&logoColor=white
-[nest-url]: https://nestjs.com/
-[mysql]: https://img.shields.io/badge/MySql-blue?style=for-the-badge&logo=mysql&logoColor=white
-[mysql-url]: https://www.mysql.com/
+[angular.js]: https://img.shields.io/badge/angular.js-red?style=for-the-badge&logo=angular&logoColor=white
+[angular-url]: https://angularjs.com/
+[ionic]: https://img.shields.io/badge/ionic-blue?style=for-the-badge&logo=ionic&logoColor=white
+[ionic-url]: https://www.ionic.com/
 [typescript]: https://img.shields.io/badge/TypeScript-blue?style=for-the-badge&logo=typescript&logoColor=white
 [typescript-url]: https://www.typescriptlang.org/
+[capacitor]: https://img.shields.io/badge/capacitor-blue?style=for-the-badge&logo=capacitor&logoColor=white
+[capacitor-url]: https://www.capacitorlang.org/

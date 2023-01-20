@@ -1,0 +1,28 @@
+<ion-content>
+  <img src="assets/images/welcome-build.svg" alt="" />
+  <div class="ion-padding-start ion-padding-end">
+    <h1 class="title">{{ 'welcome.title' | translate }}</h1>
+    <h3 class="announced">{{ 'welcome.announced' | translate }}</h3>
+    <div class="buttons">
+      <ion-button
+        class="register"
+        size="large"
+        mode="ios"
+        routerLink="/auth/sign-up"
+      >
+        {{ 'auth.createAccount' | translate }}
+      </ion-button>
+
+      <ion-button class="login" size="large" mode="ios" routerLink="/auth/sign">
+        {{ 'auth.login' | translate }}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-padding ion-no-border">
+  <p>
+    Al registrarte en vilet, <a>acepta nuestros Términos y condiciones</a> y
+    <a>politica de privacidad</a>.
+  </p>
+</ion-footer>

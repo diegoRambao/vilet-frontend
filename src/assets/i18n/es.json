@@ -1,10 +1,18 @@
 {
+  "global": {
+    "continue": "Continuar",
+    "iamClient": "Soy Cliente",
+    "iamProfessional": "Soy Profesional",
+    "clientDescription": "Busco a profesionales que brinden servicios",
+    "professionalDescription": "Presto mis servicios a clientes"
+  },
   "welcome": {
     "title": "Bienvenido a Vilet",
     "announced": "En Vilet podras encontrar todos los servicios para tu hogar"
   },
   "auth": {
     "createAccount": "Crear Cuenta",
-    "login": "Iniciar Sesión"
+    "login": "Iniciar Sesión",
+    "whatToUse": "Elige para que quieres usar Vilet"
   }
 }

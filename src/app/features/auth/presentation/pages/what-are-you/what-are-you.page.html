@@ -1,0 +1,41 @@
+<ion-content class="ion-padding">
+  <h2 class="title">{{ 'auth.createAccount' | translate }}</h2>
+  <span class="disclaimer">{{ 'auth.whatToUse' | translate }}</span>
+
+  <div class="options">
+    <div
+      class="options__card"
+      [ngClass]="{'options__card--active': userType === UserType.client}"
+      (click)="changeUserType(UserType.client)"
+    >
+      <img src="assets/images/client.svg" alt="" />
+      <span class="options__title">{{ 'global.iamClient' | translate }}</span>
+      <span class="options__description"
+        >{{ 'global.clientDescription' | translate }}</span
+      >
+    </div>
+    <div
+      class="options__card"
+      [ngClass]="{'options__card--active': userType === UserType.professional}"
+      (click)="changeUserType(UserType.professional)"
+    >
+      <img src="assets/images/professional.svg" alt="" />
+      <span class="options__title"
+        >{{ 'global.iamProfessional' | translate }}</span
+      >
+      <span class="options__description"
+        >{{ 'global.professionalDescription' | translate }}</span
+      >
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding" mode="ios">
+  <ion-button
+    class="button-primary-red"
+    expand="block"
+    size="large"
+    (click)="goToSignUp()"
+    >{{ 'global.continue' | translate }}</ion-button
+  >
+</ion-footer>

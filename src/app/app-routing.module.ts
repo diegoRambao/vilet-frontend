@@ -14,7 +14,19 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => import('./features/auth/auth.module').then((m) => m.AuthModule)
-  }
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./features/home/home.module').then((m) => m.HomeModule)
+  },
+  {
+    path: 'requests',
+    loadChildren: () => import('./features/requests/requests.module').then((m) => m.RequestsModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./features/profile/profile.module').then((m) => m.ProfileModule)
+  },
 ];
 @NgModule({
   imports: [

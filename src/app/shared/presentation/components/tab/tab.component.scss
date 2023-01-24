@@ -1,0 +1,25 @@
+ion-tab-bar {
+  --background: white;
+  border-top-color: #d8d8d8;
+}
+
+ion-tab-button {
+  ion-tab-button {
+    --color-selected: var(--ion-color-primary);
+    --color: var(--ion-color-step-500);
+  }
+  ion-label,
+  ion-icon {
+    color: #7c8491;
+  }
+}
+
+ion-tab-button.tab-selected {
+  ion-label {
+    color: var(--red-primary);
+    font-weight: 600;
+  }
+  ion-icon {
+    color: var(--red-primary);
+  }
+}

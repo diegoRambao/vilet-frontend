@@ -1,9 +1,55 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>sign-up</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <h2 class="title">{{ 'auth.createAccount' | translate }}</h2>
+  <span class="disclaimer">{{ 'auth.completeYourData' | translate }}</span>
 
-<ion-content>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'global.name' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-input formControlName="name"></ion-input>
+      </div>
+    </ion-item>
 
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'global.email' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-input formControlName="email"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'global.phone' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-input formControlName="phone"></ion-input>
+      </div>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'global.password' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-input formControlName="password" type="password"></ion-input>
+      </div>
+    </ion-item>
+  </form>
+
+  <ion-button
+    class="button-primary-red"
+    (click)="submit()"
+    expand="block"
+    size="large"
+    >Continuar</ion-button
+  >
+
+  <p class="text-link">
+    {{ 'auth.haveAccount' | translate }}
+    <a routerLink="/auth/sign">{{ 'auth.login' | translate }}</a>
+  </p>
 </ion-content>

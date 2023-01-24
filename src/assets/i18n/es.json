@@ -4,15 +4,24 @@
     "iamClient": "Soy Cliente",
     "iamProfessional": "Soy Profesional",
     "clientDescription": "Busco a profesionales que brinden servicios",
-    "professionalDescription": "Presto mis servicios a clientes"
+    "professionalDescription": "Presto mis servicios a clientes",
+    "email": "email",
+    "name": "Nombre",
+    "password": "contraseña",
+    "phone": "Telefono"
   },
   "welcome": {
     "title": "Bienvenido a Vilet",
     "announced": "En Vilet podras encontrar todos los servicios para tu hogar"
   },
+  "chooseCategory": "Elige una categoria para crear una solicitud y buscar profesionales",
   "auth": {
     "createAccount": "Crear Cuenta",
     "login": "Iniciar Sesión",
-    "whatToUse": "Elige para que quieres usar Vilet"
+    "whatToUse": "Elige para que quieres usar Vilet",
+    "completeYourData": "Completa tus datos para crearte una cuenta en vilet",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "haveNotAccount": "¿No tienes una cuenta?",
+    "hiAgain": "¡Hola de nuevo! Ingresa tus credenciales para iniciar sesion"
   }
 }

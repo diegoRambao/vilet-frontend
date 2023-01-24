@@ -21,7 +21,7 @@ export class WhatAreYouPage {
   public goToSignUp(): void {
     if (!this.userType) return;
 
-    this.router.navigate(['auth/sign-up'], { state: { userType: this.userType } });
+    this.router.navigate(['auth/sign-up'], { queryParams: { userType: this.userType } });
   }
 
 }

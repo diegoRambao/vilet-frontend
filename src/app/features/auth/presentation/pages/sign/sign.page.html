@@ -1,9 +1,40 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>sign</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding">
+  <h2 class="title">{{ 'auth.login' | translate }}</h2>
+  <span class="disclaimer">{{ 'auth.hiAgain' | translate }}</span>
 
-<ion-content>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'global.email' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-input formControlName="email"></ion-input>
+      </div>
+    </ion-item>
 
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'global.password' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-input formControlName="password" type="password"></ion-input>
+      </div>
+    </ion-item>
+  </form>
+
+  <ion-button
+    class="button-primary-red"
+    (click)="submit()"
+    expand="block"
+    size="large"
+  >
+    {{ 'global.continue' | translate }}
+  </ion-button>
+
+  <p class="text-link">
+    {{ 'auth.haveNotAccount' | translate }}
+    <a routerLink="/auth/what-are-you"
+      >{{ 'auth.createAccount' | translate }}</a
+    >
+  </p>
 </ion-content>

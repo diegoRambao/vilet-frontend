@@ -62,3 +62,44 @@ ion-button.button-primary {
     --border-radius: 5px;
   }
 }
+
+ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-item.ion-invalid.ion-dirty .input-container,
+ion-item.ion-invalid.ion-touched .input-container,
+ion-item.ion-invalid.ion-touched ion-input,
+ion-item.ion-invalid.ion-dirty ion-input {
+  border-color: var(--ion-color-danger) !important;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  height: 48px;
+  padding: 0 16px;
+
+  ion-button {
+    --padding-bottom: 0;
+    --padding-end: 0;
+    --padding-start: 0;
+    --padding-top: 0;
+    --color: var(--black-primary);
+    height: fit-content;
+    --color-activated: var(--black-primary);
+    --color-focused: var(--black-primary);
+    --color-hover: var(--black-primary);
+  }
+  .native-input {
+    padding: 0;
+    height: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+<div class="container-search">
+  <ion-searchbar
+    [placeholder]="'search' | translate"
+    mode="md"
+    [debounce]="600"
+    (ionChange)="handleChange($event)"
+    [value]="search"
+    class="map"
+  ></ion-searchbar>
+  <ion-list lines="full" *ngIf="locations.length > 0">
+    <ion-item
+      *ngFor="let location of locations"
+      button
+      detail="false"
+      (click)="setLocation(location)"
+    >
+      <ion-label>{{ location.placeName }}</ion-label>
+    </ion-item>
+  </ion-list>
+</div>
+
+<div id="map" class="map"></div>
+
+<div class="container-buttons">
+  <ion-button
+    class="button-primary-white button-find-me"
+    mode="ios"
+    (click)="printCurrentPosition()"
+  >
+    <ion-icon name="locate-outline" slot="start"></ion-icon>
+    {{ "findMe" | translate }}</ion-button
+  >
+  <ion-button class="button-primary-black" mode="ios" (click)="closeMap()">{{
+    "global.continue" | translate
+  }}</ion-button>
+</div>

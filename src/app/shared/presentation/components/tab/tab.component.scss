@@ -11,7 +11,7 @@ ion-tab-bar {
   border-radius: 28px;
   filter: drop-shadow(0px 3px 16px rgba(34, 34, 34, 0.14));
   padding: 4px;
-  height: 56px;
+  height: 50px;
 }
 
 ion-tab-button {
@@ -26,7 +26,6 @@ ion-icon {
 
 ion-tab-button.tab-selected {
   background: #ff52711a;
-  transition: background 1000ms linear;
   ion-label {
     color: var(--red-primary);
     font-weight: 600;

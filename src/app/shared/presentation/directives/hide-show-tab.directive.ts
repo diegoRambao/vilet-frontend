@@ -6,7 +6,7 @@ import { filter } from 'rxjs/operators';
     selector: '[hideShowTab]',
 })
 export class HideShowTabDirective {
-    routesHide: string[] = ['sign', 'sign-up', 'welcome', 'what-are-you'];
+    routesHide: string[] = ['sign', 'sign-up', 'welcome', 'what-are-you', 'new-request'];
 
     constructor(private el: ElementRef, private router: Router) {
         this.router.events

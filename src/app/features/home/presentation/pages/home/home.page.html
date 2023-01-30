@@ -2,6 +2,12 @@
   <h3 class="title">Hola Diego ¿Que necesitas?</h3>
   <span class="disclaimer">{{ 'chooseCategory' | translate }}</span>
 
+  <ion-searchbar
+    [placeholder]="'search' | translate"
+    mode="md"
+    [debounce]="600"
+  ></ion-searchbar>
+
   <div class="list-of-category">
     <ng-container *ngIf="!loading">
       <div
@@ -43,6 +49,7 @@
             mode="ios"
             lines="none"
             *ngFor="let subcategory of categorySelected.subcategories"
+            (click)="selectSubCategory(subcategory)"
           >
             <ion-label>{{ subcategory.name }}</ion-label>
           </ion-item>

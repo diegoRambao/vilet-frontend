@@ -1,0 +1,53 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Nueva solicitud</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="category-info">
+    <img [src]="'assets/icon/' + category.icon + '.svg'" alt="" />
+    <h3 class="title-category">{{ category?.name }}</h3>
+    <span class="title-subcategory">{{ category?.subCategory.name }}</span>
+  </div>
+
+  <form [formGroup]="form">
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        >{{ 'whatDoYouNeed' | translate }}</ion-label
+      >
+      <div class="input-container">
+        <ion-textarea formControlName="description"></ion-textarea>
+      </div>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label class="label" position="stacked" mode="ios"
+        ><ion-icon name="location-outline"></ion-icon> {{ 'WhereDoYouNeed' |
+        translate }}</ion-label
+      >
+      <span class="address">{{ location.placeName }}</span>
+      <div class="container-button">
+        <ion-button expand="full" (click)="setOpen()" mode="ios">
+          {{ 'changeLocation' | translate }}
+        </ion-button>
+      </div>
+    </ion-item>
+  </form>
+</ion-content>
+
+<ion-footer class="ion-no-border ion-padding" mode="ios">
+  <ion-button
+    class="button-primary-black"
+    expand="block"
+    size="large"
+    (click)="saveRequest()"
+    >{{ 'global.continue' | translate }}</ion-button
+  >
+</ion-footer>

@@ -10,6 +10,10 @@ const routes: Routes = [
       ),
     pathMatch: 'full'
   },
+  {
+    path: 'new-request',
+    loadChildren: () => import('./presentation/pages/new-request/new-request.module').then( m => m.NewRequestPageModule)
+  },
 ];
 
 @NgModule({

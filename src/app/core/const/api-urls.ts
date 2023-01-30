@@ -5,4 +5,7 @@ export class ApiUrl {
 
     // category 
     static readonly category = '/categories';
+
+    // Requests
+    static readonly requests = '/requests'
 }

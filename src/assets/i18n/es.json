@@ -23,5 +23,10 @@
     "haveAccount": "¿Ya tienes una cuenta?",
     "haveNotAccount": "¿No tienes una cuenta?",
     "hiAgain": "¡Hola de nuevo! Ingresa tus credenciales para iniciar sesion"
-  }
+  },
+  "whatDoYouNeed": "¿Que necesitas?",
+  "WhereDoYouNeed": "¿Dónde lo necesitas?",
+  "changeLocation": "Cambiar la ubicación",
+  "findMe": "Encuentrame",
+  "search": "Buscar..."
 }

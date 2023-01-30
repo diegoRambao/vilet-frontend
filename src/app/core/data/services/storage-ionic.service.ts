@@ -16,14 +16,14 @@ export class StorageIonicService implements StorageService {
         this._storage = storage;
     }
 
-    async get(key: string): Promise<any> {
+    async get<T>(key: string): Promise<any> {
         if (!this._storage) {
             await this.init();
         }
 
         const value = await this._storage?.get(key);
 
-        return JSON.parse(value);
+        return JSON.parse(value) as T;
     }
 
     set(key: string, value: any): Promise<any> {

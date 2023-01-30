@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonModal } from '@ionic/angular';
 import { OverlayEventDetail } from '@ionic/core/components';
 
-import { CategoryModule } from '../../../domain/models/category.module';
+import { CategoryModule, Subcategory } from '../../../domain/models/category.module';
 import { GetAllCategoryUseCase } from '../../../domain/usecases/get-all-category';
 
 @Component({
@@ -17,15 +18,12 @@ export class HomePage implements OnInit {
   isModalOpen = false;
   categorySelected!: CategoryModule;
 
-  constructor(private getAllCategory: GetAllCategoryUseCase) { }
+  constructor(private getAllCategory: GetAllCategoryUseCase, private router: Router) { }
 
   ngOnInit() {
     this.loading = true;
     this.getAllCategory.execute().subscribe({
-      next: (categories) => {
-        console.log(categories);
-        this.categories = categories
-      },
+      next: (categories) => this.categories = categories,
       error: (error) => console.error(error),
       complete: () => this.loading = false
     });
@@ -36,8 +34,14 @@ export class HomePage implements OnInit {
     this.isModalOpen = true;
   }
 
-  cancel() {
-    this.modal.dismiss(null, 'cancel');
+  async selectSubCategory(subCategory: Subcategory): Promise<void> {
+    await this.cancel();
+    const category = { ...this.categorySelected, subCategory };
+    this.router.navigate(['home/new-request'], { state: { category } });
+  }
+
+  async cancel() {
+    await this.modal.dismiss(null, 'cancel');
     this.isModalOpen = false;
   }
 }

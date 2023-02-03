@@ -38,18 +38,35 @@ export class MapService {
       )
       .pipe(
         map((data: any) => {
-          console.log(data);
-
           return data.features.map((feature: any) => {
+            const { place, country, region } = this.extractLocation(feature)
             return {
               placeName: feature.place_name,
               longitude: feature.center[0],
               latitude: feature.center[1],
               text: feature.text,
+              place,
+              country,
+              region
             };
           });
         })
       );
+  }
+
+  private extractLocation(feature: any) {
+    const newOrder: any = {}
+    feature.context.forEach((data: any) => {
+      const letter = data.id.split('.')[0]
+      const isInclude = ['place', 'region', 'country'].includes(letter)
+      if (isInclude) {
+        newOrder[letter] = data.text
+      }
+    })
+
+    if (!newOrder.hasOwnProperty('place')) newOrder['place'] = feature.text;
+
+    return newOrder;
   }
 
   addMarker(options: { longitude: number; latitude: number }) {

@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: 'new-request',
-    loadChildren: () => import('./presentation/pages/new-request/new-request.module').then( m => m.NewRequestPageModule)
+    loadChildren: () => import('./presentation/pages/new-request/new-request.module').then(m => m.NewRequestPageModule)
   },
 ];
 

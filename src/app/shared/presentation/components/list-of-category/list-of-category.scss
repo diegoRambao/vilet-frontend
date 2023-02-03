@@ -1,0 +1,26 @@
+.list-of-category {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+
+  .card-category {
+    background: #ffffff;
+    box-shadow: 0px 2px 11px rgba(34, 34, 34, 0.1);
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 14px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}

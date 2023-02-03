@@ -24,9 +24,9 @@ export class SignUpPage {
     private storage: StorageService,
   ) {
     this.initializeForm();
-    this.avtivatedRoute.queryParams.subscribe(params => {
-      this.form.controls['type'].setValue(params['userType']);
-    });
+    const state = this.router.getCurrentNavigation()?.extras.state
+    console.log(state);
+    this.form.patchValue({ ...state });
   }
 
   private initializeForm(): void {
@@ -36,6 +36,13 @@ export class SignUpPage {
       password: ['', [Validators.required, Validators.minLength(8)]],
       type: [UserType.client,],
       phone: ['', Validators.required],
+      category: [''],
+      country: [''],
+      latitude: [''],
+      longitude: [''],
+      place: [''],
+      placeName: [''],
+      region: [''],
     });
   }
 

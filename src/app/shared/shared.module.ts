@@ -5,8 +5,9 @@ import { IonicModule } from '@ionic/angular';
 
 import { HideShowTabDirective } from './presentation/directives/hide-show-tab.directive';
 import { TabComponent } from './presentation/components/tab/tab.component';
+import { ListOfCateogryComponent } from './presentation/components/list-of-category/tab.component';
 
-const components = [TabComponent]
+const components = [TabComponent, ListOfCateogryComponent]
 
 const directives = [HideShowTabDirective];
 

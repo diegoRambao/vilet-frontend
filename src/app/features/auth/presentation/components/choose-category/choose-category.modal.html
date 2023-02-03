@@ -1,0 +1,19 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>{{ 'auth.createAccount' | translate }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <span class="disclaimer">{{ 'auth.chooseCategory' | translate }}</span>
+
+  <app-list-of-category
+    (onClick)="chooseCategory($event)"
+  ></app-list-of-category>
+</ion-content>

@@ -8,6 +8,7 @@ import { WhatAreYouPageRoutingModule } from './what-are-you-routing.module';
 
 import { WhatAreYouPage } from './what-are-you.page';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     WhatAreYouPageRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
   ],
   declarations: [WhatAreYouPage]
 })

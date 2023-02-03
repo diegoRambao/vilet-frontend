@@ -25,8 +25,8 @@ export class MapComponent {
     this.search = this.location?.placeName || '';
     this.map.buildMap({
       container: 'map',
-      latitude: this.location.latitude,
-      longitude: this.location.longitude,
+      latitude: this.location?.latitude,
+      longitude: this.location?.longitude,
       isMarker: true
     });
   }
